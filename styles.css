@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background:  url('bg.jpg'); /* Gradient background with image */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+}
+
+.container {
+    background-color: transparent; /* Smooth, semi-transparent white background */
+    padding: 15px; /* Reduced padding */
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 350px; /* Reduced width */
+    text-align: center;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.3); /* Light border */
+}
+
+h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 32px; /* Reduced font size */
+    color: #ffd700; /* Golden color */
+    margin-bottom: 8px; /* Reduced margin */
+}
+
+h2 {
+    font-size: 18px; /* Reduced font size */
+    margin-bottom: 12px; /* Reduced margin */
+    font-weight: 600;
+    color: #ffffff; /* White color */
+}
+
+label {
+    display: block;
+    margin-bottom: 6px; /* Reduced margin */
+    font-weight: 600;
+    text-align: left;
+    color: #ffffff; /* White color */
+}
+
+input[type="text"], input[type="email"], input[type="tel"], input[type="date"], input[type="time"], input[type="number"] {
+    width: 100%;
+    padding: 8px; /* Reduced padding */
+    margin-bottom: 12px; /* Reduced margin */
+    border: 1px solid #ccc; /* Light grey border */
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.8); /* Light background with some transparency */
+    color: #333; /* Dark text color */
+    font-size: 14px;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus, input[type="date"]:focus, input[type="time"]:focus, input[type="number"]:focus {
+    outline: none;
+    border-color: #6a11cb; /* Purple border on focus */
+}
+
+button {
+    width: 100%;
+    padding: 10px; /* Reduced padding */
+    background-image: linear-gradient(to right, #f12711, #f5af19); /* Gradient button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-image: linear-gradient(to right, #f5af19, #f12711); /* Reverse gradient on hover */
+}
+
+#successMessage {
+    text-align: center;
+    margin-top: 8px; /* Reduced margin */
+    color: #28a745;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        padding: 10px; /* Reduced padding */
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
